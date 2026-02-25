@@ -3,4 +3,4 @@ resources:
 
 images:
 - name: 767828738042.dkr.ecr.us-east-1.amazonaws.com/poc/cloudshop
-  newTag: "3bd22c237092e103777bcafc8bca8760f4b54b25"
+  newTag: "92f37ce62db6334b91202947b7ebe6cb2093dfab"
