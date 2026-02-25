@@ -16,4 +16,4 @@ spec:
       - name: cloudshop
         image: 767828738042.dkr.ecr.us-east-1.amazonaws.com/poc/cloudshop
         ports:
-        - containerPort: 8000
+        - containerPort: 5000
