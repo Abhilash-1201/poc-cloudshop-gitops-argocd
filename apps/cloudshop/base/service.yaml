@@ -8,6 +8,17 @@
 #   ports:
 #   - port: 80
 #     targetPort: 8000
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: cloudshop
+# spec:
+#   type: LoadBalancer
+#   selector:
+#     app: cloudshop
+#   ports:
+#     - port: 80
+#       targetPort: 8000
 apiVersion: v1
 kind: Service
 metadata:
@@ -18,4 +29,5 @@ spec:
     app: cloudshop
   ports:
     - port: 80
-      targetPort: 8000
+      targetPort: 8000   # MUST match containerPort
+      protocol: TCP
