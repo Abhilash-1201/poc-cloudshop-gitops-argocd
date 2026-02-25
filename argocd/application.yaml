@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/Abhilash-1201/poc-cloudshop-gitops.git
+    repoURL: https://github.com/Abhilash-1201/poc-cloudshop-gitops-argocd.git
     targetRevision: main
     path: apps/cloudshop/overlays/dev
 
