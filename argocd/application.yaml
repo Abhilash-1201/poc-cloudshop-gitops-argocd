@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cloudshop
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/Abhilash-1201/poc-cloudshop-gitops.git
+    targetRevision: main
+    path: apps/cloudshop/overlays/dev
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: cloudshop
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true

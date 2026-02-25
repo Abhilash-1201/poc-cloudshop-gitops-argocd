@@ -1,0 +1,6 @@
+resources:
+- ../../base
+
+images:
+- name: 767828738042.dkr.ecr.us-east-1.amazonaws.com/poc/cloudshop
+  newTag: latest
